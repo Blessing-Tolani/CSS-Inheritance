@@ -1,0 +1,32 @@
+body {
+  padding: 50px;
+}
+
+/* This is inheritance, the list children uses the font family and size  set on their parent */
+.list {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+/* Because id has an higher specificity than class, all the lists will inherit the font family set on their different ids instead of class */
+#ordered-list-parent-id,
+#unordered-list-parent-id {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.ordered-list {
+  color: brown;
+}
+
+.unordered-list {
+  color: purple;
+}
+
+#ordered-list-five {
+  color: lawngreen;
+}
+
+#unordered-list-three {
+  color: blue;
+}
